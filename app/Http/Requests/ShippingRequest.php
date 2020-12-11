@@ -24,7 +24,7 @@ class ShippingRequest extends FormRequest
     public function rules()
     {
         return [
-            'id' => 'required|exists:settings',
+            'id'          => 'required|exists:settings',
             'value_ar'    => 'required|min:6ّ|max:25',
             'value_en'    =>'required|min:6ّ|max:25',
 

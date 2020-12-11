@@ -78,8 +78,8 @@
                                     <div class="col-md-6 en"  >
                                         <div class="form-group ">
                                             <label  class="control-label"> Name</label>
-                                            <input   type="text"  value="{{$shippingMethode ->translate('en')-> value }}" name="value" class="form-control" placeholder="">
-                                            @error("value")
+                                            <input   type="text"  value="{{$shippingMethode ->translate('en')-> value }}" name="value_en" class="form-control" placeholder="">
+                                            @error("value_en")
                                             <span class="text-danger">{{$message}}</span>
                                             @enderror
                                         </div>
