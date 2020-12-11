@@ -40,7 +40,7 @@ class LoginController extends Controller
     // start logout function
     public function logout()
     {
-        $gaurd=$this->getGaurd();
+        $gaurd = $this->getGaurd();
         $gaurd->logout();
         return redirect(route("admin.login"));
     }
