@@ -364,13 +364,14 @@
                     <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
                     <li class="dropdown dropdown-user dropdown-dark">
                         <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                            <span class="username username-hide-on-mobile"> Nick </span>
+                            <span class="username username-hide-on-mobile"> {{auth('admin')->user()->name}} </span>
                             <!-- DOC: Do not remove below empty space(&nbsp;) as its purposely used -->
-                            <img alt="" class="img-circle" src="../assets/layouts/layout4/img/avatar9.jpg" /> </a>
+
+                            <img alt="" class="img-circle" src="{{asset('/upload/'. auth('admin')->user()->image)}}" /> </a>
                         <ul class="dropdown-menu dropdown-menu-default">
                             <li>
-                                <a href="page_user_profile_1.html">
-                                    <i class="icon-user"></i> My Profile </a>
+                                <a href="{{route('profile.edit',auth('admin')->user()->id)}}">
+                                    <i class="icon-user"></i> الملف الشخصي </a>
                             </li>
                             <li>
                                 <a href="app_calendar.html">
@@ -394,17 +395,14 @@
                                     <i class="icon-lock"></i> Lock Screen </a>
                             </li>
                             <li>
-                                <a href="page_user_login_1.html">
-                                    <i class="icon-key"></i> Log Out </a>
+                                <a href="{{route('admin.logout')}}">
+                                    <i class="icon-key"></i> تسجيل خروج </a>
                             </li>
                         </ul>
                     </li>
                     <!-- END USER LOGIN DROPDOWN -->
                     <!-- BEGIN QUICK SIDEBAR TOGGLER -->
-                    <li class="dropdown dropdown-extended quick-sidebar-toggler">
-                        <span class="sr-only">Toggle Quick Sidebar</span>
-                        <i class="icon-logout"></i>
-                    </li>
+
                     <!-- END QUICK SIDEBAR TOGGLER -->
                 </ul>
             </div>

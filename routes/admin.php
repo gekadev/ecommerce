@@ -14,7 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-
 // routes for non autunticated routes
 Route::group(['namespace'=>'Dashboard','middleware'=>'guest:admin','prefix'=>'admin'],function (){
     Route::get('login','LoginController@login')->name('admin.login');
@@ -32,6 +31,11 @@ Route::group(['namespace' =>'Dashboard','middleware'=>'auth:admin','prefix'=>'ad
         Route::get('shippingMethods/{type}','SettingController@editShippingMethods')->name('settings.editShippingMethods');
         Route::put('shippingMethods/{id}','SettingController@updateShippingMethods')->name('settings.updateShippingMethods');
     });
-
+    //routes for admin profile
+    Route::group(['prefix'=>'profile'],function (){
+        Route::get('edit/{id}','ProfileController@editProfile')->name('profile.edit');
+        Route::put('update/{id}','ProfileController@updateprofile')->name('profile.update');
+        Route::put('update_password/{id}',"ProfileController@update_password")->name("profile.update_password");
+        Route::post('update_image/{id}',"ProfileController@update_images")->name("profile.update_image");
+    });
 });
-
