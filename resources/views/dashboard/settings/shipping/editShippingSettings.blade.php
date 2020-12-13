@@ -24,7 +24,7 @@
                     <i class="fa fa-circle"></i>
                 </li>
                 <li>
-                    <span class="active">{{trans('dashboard\shipping.title')}}</span>
+                    <span class="active">تعديل وسيله الشحن</span>
                 </li>
             </ul>
             <!-- END PAGE BREADCRUMB -->
