@@ -38,4 +38,20 @@ Route::group(['namespace' =>'Dashboard','middleware'=>'auth:admin','prefix'=>'ad
         Route::put('update_password/{id}',"ProfileController@update_password")->name("profile.update_password");
         Route::post('update_image/{id}',"ProfileController@update_images")->name("profile.update_image");
     });
+    //routes for admin Categories
+    Route::group(['prefix' => 'category'], function () {
+        Route::get('/','CategoryController@index') -> name('category.index');
+        Route::get('create','CategoryController@create') -> name('category.create');
+        Route::put('store','CategoryController@store') -> name('category.store');
+        Route::get('edit/{id}','CategoryController@edit') -> name('category.edit');
+        Route::get('show/{id}','CategoryController@show') -> name('category.show');
+        Route::put('update/{id}','CategoryController@update') -> name('category.update');
+        Route::put('delete/{id}','CategoryController@delete') -> name('category.delete');
+        Route::put('updateStatus/{id}','CategoryController@updateStatus') -> name('category.updateStatus');
+        Route::post('update_image/{id}',"CategoryController@update_images")->name("category.update_image");
+        Route::put('Datatable', 'CategoryController@Datatable')->name("category.DataTabel");
+        Route::get('pdf', 'CategoryController@pdf')->name("category.pdf");
+        Route::get('CSV', 'CategoryController@CSV')->name("category.CSV");
+
+    });
 });

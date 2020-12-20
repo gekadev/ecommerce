@@ -44,9 +44,31 @@
                         </li>
                     </ul>
                 </li>
-                <li class="heading">
-                    <h3 class="uppercase">Features</h3>
+
+                <li class="nav-item  ">
+                    <a href="javascript:;" class="nav-link nav-toggle">
+                        <i class="icon-social-dribbble"></i>
+                        <span class="title">الاقسام</span>
+                        <span class="arrow"></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="nav-item  ">
+                            <a href="{{route('category.create')}}" class="nav-link ">
+                                <i class="icon-plus"></i>
+                                <span class="title">اضافه قسم</span>
+                            </a>
+                        </li>
+
+
+                        <li class="nav-item  ">
+                            <a href="{{route('category.index')}}" class="nav-link nav-toggle">
+                                <i class="icon-magnifier"></i>
+                                <span class="title">جميع الاقسام</span>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
+
                 <li class="nav-item  ">
                     <a href="javascript:;" class="nav-link nav-toggle">
                         <i class="icon-diamond"></i>
@@ -903,6 +925,7 @@
                         </li>
                     </ul>
                 </li>
+
                 <li class="nav-item  ">
                     <a href="javascript:;" class="nav-link nav-toggle">
                         <i class="icon-settings"></i>

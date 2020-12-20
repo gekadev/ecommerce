@@ -5,10 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="afd35521-4eab-44d2-9bb9-292d35cc43a3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/ProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/includes/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/includes/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/settings/shipping/editShippingSettings.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/settings/shipping/editShippingSettings.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Helpers/general.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers/general.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/CategoryReport.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/CategoryReport.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/CategoryTranslation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/CategoryTranslation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/ar/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/admin/ar/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/ar/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/admin/ar/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/ar/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/validation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
@@ -146,6 +156,21 @@
       <path value="$PROJECT_DIR$/vendor/justinrainbow/json-schema" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/reflection-docblock" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-ide-helper" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-dompdf" />
+      <path value="$PROJECT_DIR$/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-snappy" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-snappy" />
+      <path value="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet" />
+      <path value="$PROJECT_DIR$/vendor/maatwebsite/excel" />
+      <path value="$PROJECT_DIR$/vendor/maennchen/zipstream-php" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/matrix" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/complex" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/php-enum" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
     </include_path>
   </component>
   <component name="ProjectId" id="1l3JM73avhaFHoIILSgG5lxPAwy" />
@@ -161,7 +186,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/migrations" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/dashboard/category" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -171,23 +196,23 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\laravelprojects\metronic\resources\views\dashboard\category" />
+      <recent name="F:\laravelprojects\metronic\app" />
+      <recent name="F:\laravelprojects\metronic\app\Traites" />
+      <recent name="F:\laravelprojects\metronic\app\Http\Requests" />
+      <recent name="F:\laravelprojects\metronic\public\assets\admin\ar\error" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\laravelprojects\metronic\app\Http\Controllers\Dashboard" />
       <recent name="F:\laravelprojects\new\app\Http\Controllers\Dashboard\auth" />
       <recent name="F:\laravelprojects\new\resources\views\site" />
       <recent name="F:\laravelprojects\new\public" />
       <recent name="F:\laravelprojects\new\public\assets\admin" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\laravelprojects\metronic\database\migrations" />
-      <recent name="F:\laravelprojects\metronic\app\Http\Requests" />
-      <recent name="F:\laravelprojects\metronic\resources\views\dashboard" />
-      <recent name="F:\laravelprojects\metronic\resources\lang\en\dashboard" />
-      <recent name="F:\laravelprojects\metronic\resources\lang\ar\dashboard" />
     </key>
   </component>
   <component name="RunManager">
@@ -219,7 +244,18 @@
       <workItem from="1607622129812" duration="697000" />
       <workItem from="1607669665123" duration="22464000" />
       <workItem from="1607754926774" duration="25871000" />
-      <workItem from="1607841837757" duration="7961000" />
+      <workItem from="1607841837757" duration="32625000" />
+      <workItem from="1607929227008" duration="20883000" />
+      <workItem from="1607951750399" duration="17000" />
+      <workItem from="1607952126953" duration="244000" />
+      <workItem from="1607952575875" duration="2005000" />
+      <workItem from="1607956104186" duration="2064000" />
+      <workItem from="1607959614012" duration="4623000" />
+      <workItem from="1607967190505" duration="4253000" />
+      <workItem from="1608017572028" duration="14855000" />
+      <workItem from="1608101425327" duration="47628000" />
+      <workItem from="1608385103087" duration="1325000" />
+      <workItem from="1608484209163" duration="8945000" />
     </task>
     <servers />
   </component>
@@ -238,34 +274,42 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="487" y="32" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1607066323547" />
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606838962600">
+    <state x="348" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1608119442517">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1606838962600" />
+    <state x="348" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1608119442517" />
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607885333997">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1607885333997" />
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606906432104">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1606906432104" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1607846322533">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1608051453688">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1607846322533" />
-    <state x="422" y="71" key="NewPhpClassDialog" timestamp="1607674692261">
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1608051453688" />
+    <state x="422" y="71" key="NewPhpClassDialog" timestamp="1608486322508">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="422" y="71" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1607674692261" />
-    <state x="518" y="283" key="NewPhpFileDialog" timestamp="1607541256049">
+    <state x="422" y="71" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1608486322508" />
+    <state x="518" y="283" key="NewPhpFileDialog" timestamp="1608486379802">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="518" y="283" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1607541256049" />
-    <state x="196" y="18" key="SettingsEditor" timestamp="1607774650186">
+    <state x="518" y="283" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1608486379802" />
+    <state x="196" y="17" key="SettingsEditor" timestamp="1607956929765">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="196" y="18" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1607774650186" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1607766092161">
+    <state x="196" y="17" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1607956929765" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1608130150213">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1607766092161" />
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1608130150213" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1608492241936">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1608492241936" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -288,6 +332,30 @@
           <url>file://$PROJECT_DIR$/resources/views/dashboard/profile/editprofile.blade.php</url>
           <line>5</line>
           <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/dashboard/category/getall.blade.php</url>
+          <line>71</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/dashboard/category/getall.blade.php</url>
+          <line>231</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php</url>
+          <line>54</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php-line-method">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/Dashboard/CategoryController.php</url>
+          <line>217</line>
+          <properties>
+            <option name="className" value="\App\Http\Controllers\Dashboard\CategoryController" />
+            <option name="methodName" value="delete" />
+          </properties>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

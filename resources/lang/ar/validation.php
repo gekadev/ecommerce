@@ -13,6 +13,7 @@ return [
     'unique' => 'الحقل موجود مسبقا',
     'same' => 'هذا الحقل يجيب  :attribute and :other  match.',
     'mimes' => 'The :هذا الحقل يجيب ان يكون  من نوع: :values.',
+    'alpha'=>'هذا الحقل يجب ان يكون حروف فقط',
 
     'min' => [
         'numeric' => ' هذا الحقل يجب ان  لا يقل  عن :min',

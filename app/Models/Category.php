@@ -44,4 +44,41 @@ class Category extends Model
      *
      * @var array
      */
+
+    /**
+     * start our methods
+     *
+     * @var array
+     */
+
+
+    public function scopeAllcategories($query)
+    {
+        return $query ->where('deleted',1);
+    }
+
+    public function scopeParent($query)
+    {
+        return $query->where('deleted',1)
+                     ->wherenull('parent_id');
+    }
+
+    public function scopeChiled($query)
+    {
+        return $query->where('deleted',1)
+                     ->whereNotnull('parent_id');
+    }
+
+
+    public function scopeIsExist($query ,$id)
+    {
+        return $query->where(['deleted' => 1, 'id' => $id])->orderBy('id', 'DESC');
+    }
+
+    public function getActive()
+    {
+        return  $this->status == 1 ? 'مفعل':'غ.مفعل';
+
+    }
+
 }
