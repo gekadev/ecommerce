@@ -1,8 +1,65 @@
 body{
     font-family: 'Cairo', sans-serif;
-
+}
+#action  a{
+    text-decoration: none;
+    color:#676a6c;
+    font-size:20px;
+    margin-right:5px;
 }
 
-.form-body .en{
+#action a:hover{
+    color:#1ab394;
+}
+.status{
+    padding: 10px;
+    border-radius:50%!important;
+    color:#fff;
+    cursor: pointer;
+
+}
+.on{
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.off{
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+.actions{
+    list-style: none;
+    padding:0;
+    margin: auto !important;;
+    overflow:hidden;
+    width:100%;
+    text-align: center !important;
+}
+.img-edit,.img-show,.img-edit2 {
+    width: 50px !important;
+    height: 50px;
+    cursor: pointer;
+    border-radius:50%!important;
+}
+.but {
+    float: left;
+}
+
+
+.chosen-container .chosen-results {
+    max-height:100px !important;;
+}
+
+.chosen-container-single {
+    width:100% !important;
+}
+.pointer:hover
+{
+    cursor: pointer;
+}
+.main_category{
+    display: none;
+}
+.en{
     direction: ltr;
 }

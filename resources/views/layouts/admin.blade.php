@@ -11,6 +11,7 @@
     <meta content="" name="description" />
     <meta content="" name="author" />
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <script src=" {{asset('assets/admin/ar/ckeditor/ckeditor.js')}}" ></script>
 
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -22,6 +23,8 @@
     <link href="{{asset('assets/admin/ar/global/plugins/bootstrap-switch/css/bootstrap-switch-rtl.min.css')}}" rel="stylesheet" type="text/css" />
     <!-- END GLOBAL MANDATORY STYLES -->
     <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" />
+
     <link href="{{asset('assets/admin/ar/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/admin/ar/global/plugins/morris/morris.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{asset('assets/admin/ar/global/plugins/fullcalendar/fullcalendar.min.css')}}" rel="stylesheet" type="text/css" />
@@ -30,6 +33,9 @@
     <!-- BEGIN THEME GLOBAL STYLES -->
     <link href="{{asset('assets/admin/ar/global/css/components-rtl.min.css')}}" rel="stylesheet" id="style_components" type="text/css" />
     <link href="{{asset('assets/admin/ar/global/css/plugins-rtl.min.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('assets/admin/ar/chosen/chosen.min.css')}}" rel="stylesheet" type="text/css" />
+
+
 
     <!-- END THEME GLOBAL STYLES -->
     <!-- BEGIN THEME LAYOUT STYLES -->
@@ -55,6 +61,7 @@
 <script src="{{asset('assets/admin/ar/global/plugins/excanvas.min.js')}}" type="text/javascript"></script>
 <script src="{{asset('assets/admin/ar/global/plugins/jquery.min.js')}}" type="text/javascript"></script>
 <script src="{{asset('assets/admin/ar/global/plugins/bootstrap/js/bootstrap.min.js')}}" type="text/javascript"></script>
+
 <script src="{{asset('assets/admin/ar/global/plugins/js.cookie.min.js')}}" type="text/javascript"></script>
 <script src="{{asset('assets/admin/ar/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js')}}" type="text/javascript"></script>
 <script src="{{asset('assets/admin/ar/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js')}}" type="text/javascript"></script>
@@ -109,6 +116,11 @@
 <script src="{{asset('assets/admin/ar/layouts/layout4/scripts/layout.min.js')}}" type="text/javascript"></script>
 <script src="{{asset('assets/admin/ar/layouts/layout4/scripts/demo.min.js')}}" type="text/javascript"></script>
 <script src=" {{asset('assets/admin/ar/layouts/global/scripts/quick-sidebar.min.js')}}" type="text/javascript"></script>
+<script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+<script src=" {{asset('assets/admin/ar/ckeditor/ckeditor.js')}}" type="text/javascript"></script>
+<script src=" {{asset('assets/admin/ar/chosen/chosen.jquery.js')}}" type="text/javascript"></script>
+<script src=" {{asset('assets/admin/ar/custom.js')}}" type="text/javascript"></script>
+
 
 <!-- END THEME LAYOUT SCRIPTS -->
 <!-- END THEME LAYOUT SCRIPTS -->

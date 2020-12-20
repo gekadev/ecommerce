@@ -10,6 +10,7 @@
 
 // start define constants
 define('PAGINATION_COUNT',15);
+
  function fileName()
 {
     return app()->getLocale() == 'ar'?'-rtl':'';
