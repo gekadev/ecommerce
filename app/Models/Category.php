@@ -45,12 +45,6 @@ class Category extends Model
      * @var array
      */
 
-    /**
-     * start our methods
-     *
-     * @var array
-     */
-
 
     public function scopeAllcategories($query)
     {
@@ -80,5 +74,23 @@ class Category extends Model
         return  $this->status == 1 ? 'مفعل':'غ.مفعل';
 
     }
+    public  function scopeCategoryType()
+    {
+        return  is_null($this->parent_id) ? 'قسم رئيسي':'قسم فرعي';
+
+    }
+
+
+    /**
+     * relations ***********
+     *
+     * @var
+     */
+
+    public  function getParent()
+    {
+        return $this->belongsTo(self::class,'parent_id');
+    }
+
 
 }

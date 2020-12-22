@@ -33,16 +33,27 @@ Route::group(['namespace' =>'Dashboard','middleware'=>'auth:admin','prefix'=>'ad
     });
     //routes for admin profile
     Route::group(['prefix'=>'profile'],function (){
+        Route::get('/','ProfileController@index') -> name('profile.index');
+        Route::get('create','ProfileController@create') -> name('profile.create');
+        Route::post('store','ProfileController@store') -> name('profile.store');
+        Route::get('show/{id}','ProfileController@show') -> name('profile.show');
         Route::get('edit/{id}','ProfileController@editProfile')->name('profile.edit');
         Route::put('update/{id}','ProfileController@updateprofile')->name('profile.update');
+        Route::put('delete/{id}','ProfileController@delete') -> name('profile.delete');
+        Route::put('updateStatus/{id}','ProfileController@updateStatus') -> name('profile.updateStatus');
+        Route::post('update_image/{id}',"ProfileController@update_images")->name("profile.update_image");
         Route::put('update_password/{id}',"ProfileController@update_password")->name("profile.update_password");
         Route::post('update_image/{id}',"ProfileController@update_images")->name("profile.update_image");
+        Route::put('Datatable', 'ProfileController@Datatable')->name("profile.DataTabel");
+        Route::get('pdf', 'ProfileController@pdf')->name("profile.pdf");
+        Route::get('CSV', 'ProfileController@CSV')->name("profile.CSV");
+        Route::get('showdetails/{id}', 'ProfileController@showdetails')->name("profile.showdetails");
     });
     //routes for admin Categories
     Route::group(['prefix' => 'category'], function () {
         Route::get('/','CategoryController@index') -> name('category.index');
         Route::get('create','CategoryController@create') -> name('category.create');
-        Route::put('store','CategoryController@store') -> name('category.store');
+        Route::post('store','CategoryController@store') -> name('category.store');
         Route::get('edit/{id}','CategoryController@edit') -> name('category.edit');
         Route::get('show/{id}','CategoryController@show') -> name('category.show');
         Route::put('update/{id}','CategoryController@update') -> name('category.update');
@@ -52,6 +63,7 @@ Route::group(['namespace' =>'Dashboard','middleware'=>'auth:admin','prefix'=>'ad
         Route::put('Datatable', 'CategoryController@Datatable')->name("category.DataTabel");
         Route::get('pdf', 'CategoryController@pdf')->name("category.pdf");
         Route::get('CSV', 'CategoryController@CSV')->name("category.CSV");
+        Route::get('showdetails/{id}', 'CategoryController@showdetails')->name("category.showdetails");
 
     });
 });

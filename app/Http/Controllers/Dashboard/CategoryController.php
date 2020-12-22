@@ -33,6 +33,7 @@ class CategoryController extends Controller
         return view('dashboard.category.create')->with($dataView);
 
     }
+
     // start add data
     public function store(CategoryRequest $request)
     {
@@ -82,11 +83,11 @@ class CategoryController extends Controller
     {
         //check if category is founf
         $dataView['category'] = Category::IsExist($id)->first();
-        $dataView['category'] ->makeVisible(['translations']);
         if(!$dataView['category'])
             return view('layouts.error');
         else
-            $dataView['title'] = 'تعديل  القسم';
+        $dataView['category'] ->makeVisible(['translations']);
+        $dataView['title'] = 'تعديل  القسم';
         $dataView['allCategories'] = Category::Allcategories()->get();
         $dataView['allCategories'] ->makeVisible(['translations']);
         return  view('dashboard.category.edit')->with($dataView);
@@ -104,7 +105,6 @@ class CategoryController extends Controller
                 'last_updated_by' => auth('admin')->user()->id,
                 'created_by'      => auth('admin')->user()->id,
                 'created'         => time(),
-                "image"           => UploadImage($request,"image"),
                 'en' => [
                     'name'       => $request->name_en,
                     'description' => $request->description_en,
@@ -118,7 +118,7 @@ class CategoryController extends Controller
             // check is category id found
             $category = Category::IsExist($id)->first();
             if(!$category)
-                return redirect()->back()->with('error','هذا القسم غير موجود');
+                return view('layouts.error');
             //start define categoru is sub or main
             $request ->sub ==1 ?  $validatedData['parent_id'] = $request ->category_id: $validatedData['parent_id']=null;
             // start update data
@@ -160,10 +160,22 @@ class CategoryController extends Controller
                 return '<div class="btn-group">
                   <a class="btn btn-purple dropdown-toggle" href="javascript:;" data-toggle="dropdown"><i class="fa fa-angle-down"></i><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a> <div class="dropdown-menu pull-right">
                   <li><a href="' . route('category.edit', $category->id) . '"  class="" id="' . $category->id . '" ><i class="fa fa-pencil-square-o" aria-hidden="true"></i></i>تعديل</a></li>
-                    <li><a href="' . route('category.show', $category->id) . '"  class="" id="' . $category->id . '" ><i class="fa fa-eye" aria-hidden="true"></i></i>عرض</a></li>
+                    <li><a href="' . route('category.showdetails', $category->id) . '"  class="" id="' . $category->id . '" ><i class="fa fa-eye" aria-hidden="true"></i></i>عرض</a></li>
                    <li><a href=""  data-toggle="modal"  data-id="' . $category->id . '" data-target="#deleteModal" class="deleteIcon" title="Delete"><i class="fa fa-trash-o" aria-hidden="true"></i>خذف</li>
                     </div></div>';
             })->rawColumns(['image', 'status', 'action'])->make(true);
+    }
+    public function showdetails($id)
+    {
+        //check if category is founf
+        $dataView['category'] = Category::IsExist($id)->first();
+        if(!$dataView['category'])
+            return view('layouts.error');
+        else
+            $dataView['category'] ->makeVisible(['translations']);
+        $dataView['title'] = 'تفاصيل القسم';
+        return  view('dashboard.category.showdetails')->with($dataView);
+
     }
     //start create pdf
     public function pdf()
