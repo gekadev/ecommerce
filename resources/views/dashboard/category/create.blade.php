@@ -52,7 +52,7 @@
                               action ="{{route('category.store')}}"
                               class  ="horizontal-form" >
                             @csrf
-                            @method('PUT')
+{{--                            @method('PUT')--}}
                             <div class="form-body">
                                 <div class="row">
                                     <div class="col-md-6  ">

@@ -21,18 +21,72 @@ class ProfileRequest extends FormRequest
      *
      * @return array
      */
+//    public function rules()
+//    {
+//        return [
+//            'id'         => 'integer|required|exists:admins',
+//            'name'       => 'min:2|required|max:50',
+//            'email'      => 'required|email|unique:admins,email,'.$this->id,
+//            'address'    => 'required|min:6|max:50',
+//            'phone'      => 'required|integer',
+//            'status'     => 'integer'
+//
+//        ];
+//    }
     public function rules()
     {
-        return [
-            'id'         => 'integer|required|exists:admins',
-            'name'       => 'min:2|required|max:50',
-            'email'      => 'required|email|unique:admins,email,'.$this->id,
-            'address'    => 'required|min:6|max:50',
-            'phone'      => 'required|integer',
-            'status'     => 'integer'
+        switch($this->method())
+        {
 
-        ];
+            case 'POST'://add data
+            {
+                return [
+                    'name'       => 'min:2|required|max:50',
+                    'email'      => 'required|email|unique:admins,email',
+                    'address'    => 'required|min:6|max:50',
+                    'phone'      => 'required|regex:/(0)[0-9]/|not_regex:/[a-z]/|min:9 |max:11',
+                    'status'     => 'integer',
+                    'password'   => 'min:6|required',
+                    'repassword' => 'required|same:password',
+                    'image' => 'required|mimes:jpeg,png,jpg,gif,svg|max:2048'
+                ];
+            }
+            case 'PUT': //edit data
+            {
+                return [
+                    'id'         => 'integer|required|exists:admins',
+                    'name'       => 'min:2|required|max:50',
+                    'email'      => 'required|email|unique:admins,email,'.$this->id,
+                    'address'    => 'required|min:6|max:50',
+                    'phone'      => 'required|regex:/(0)[0-9]/|not_regex:/[a-z]/|min:9 |max:11',
+                    'status'     => 'integer'
+                ];
+            }
+            case 'PATCH':
+            {
+                return [];
+            }
+
+            default:break;
+        }
     }
+
+//    public function rules()
+//    {
+//        return [
+////            'id'         => 'integer|required|exists:admins',
+//            'name'       => 'min:2|required|max:50',
+//            'email'      => 'required|email|unique:admins,email,'.$this->id,
+//            'address'    => 'required|min:6|max:50',
+//            'phone'      => 'required|regex:/(0)[0-9]/|not_regex:/[a-z]/|min:9 |max:11',
+//            'status'     => 'integer',
+//            'password'   => 'min:6|required',
+//            'repassword' => 'required|same:password',
+////            'image'      =>'required'
+//
+//
+//        ];
+//    }
     // validation messages
 //    public function messages()
 //    {
