@@ -27,7 +27,7 @@ class SettingController extends Controller
             $dataView['shippingMethode'] = Setting::where(['key' =>'free_shipping_label'])->first();
         }
 
-      return view('dashboard.settings.shipping.editShippingSettings')->with($dataView);
+     return view('dashboard.settings.shipping.editShippingSettings')->with($dataView);
 
 
     }

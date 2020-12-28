@@ -8,13 +8,11 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/CategoryController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/ProfileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/SettingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/SettingController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Requests/CategoryRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/CategoryRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ProfileRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ProfileRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/validation.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/validation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/category/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/category/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/error.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/error.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -191,23 +189,23 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\laravelprojects\metronic\app\Exports" />
+      <recent name="F:\laravelprojects\metronic\app\Http\Requests" />
+      <recent name="F:\laravelprojects\metronic\database\migrations" />
+      <recent name="F:\laravelprojects\metronic\app\Http\Controllers\Dashboard" />
+      <recent name="F:\laravelprojects\metronic\resources\views\dashboard" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\laravelprojects\metronic\database\migrations" />
+      <recent name="F:\laravelprojects\metronic\database\seeds" />
       <recent name="F:\laravelprojects\metronic\app\Http\Controllers\Dashboard" />
       <recent name="F:\laravelprojects\new\app\Http\Controllers\Dashboard\auth" />
       <recent name="F:\laravelprojects\new\resources\views\site" />
-      <recent name="F:\laravelprojects\new\public" />
-      <recent name="F:\laravelprojects\new\public\assets\admin" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\laravelprojects\metronic\app\Exports" />
-      <recent name="F:\laravelprojects\metronic\resources\views\dashboard\profile" />
-      <recent name="F:\laravelprojects\metronic\resources\views\dashboard\category" />
-      <recent name="F:\laravelprojects\metronic\app" />
-      <recent name="F:\laravelprojects\metronic\app\Traites" />
     </key>
   </component>
   <component name="RunManager">
@@ -251,7 +249,9 @@
       <workItem from="1608101425327" duration="47628000" />
       <workItem from="1608385103087" duration="1325000" />
       <workItem from="1608484209163" duration="10754000" />
-      <workItem from="1608571185564" duration="19088000" />
+      <workItem from="1608571185564" duration="41603000" />
+      <workItem from="1609177093517" duration="1765000" />
+      <workItem from="1609180103209" duration="3239000" />
     </task>
     <servers />
   </component>
@@ -282,10 +282,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1606906432104" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1608051453688">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1608970586490">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1608051453688" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1608970586490" />
     <state x="422" y="71" key="NewPhpClassDialog" timestamp="1608486322508">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -294,18 +294,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="518" y="283" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1608486379802" />
-    <state x="196" y="17" key="SettingsEditor" timestamp="1608496515519">
+    <state x="215" y="17" key="SettingsEditor" timestamp="1609180288949">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="196" y="17" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1608496515519" />
-    <state x="339" y="162" key="run.anything.popup" timestamp="1608130150213">
+    <state x="215" y="17" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1609180288949" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1609090150660">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1608130150213" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1608581033948">
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1609090150660" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1609183018796">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1608581033948" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1609183018796" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -341,7 +341,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php</url>
-          <line>76</line>
+          <line>97</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
@@ -351,7 +351,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/Dashboard/CategoryController.php</url>
-          <line>229</line>
+          <line>230</line>
           <properties>
             <option name="className" value="\App\Http\Controllers\Dashboard\CategoryController" />
             <option name="methodName" value="delete" />
@@ -360,7 +360,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/Dashboard/CategoryController.php</url>
-          <line>197</line>
+          <line>198</line>
           <properties>
             <option name="className" value="\App\Http\Controllers\Dashboard\CategoryController" />
             <option name="methodName" value="update_images" />

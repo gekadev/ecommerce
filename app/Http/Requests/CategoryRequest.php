@@ -46,7 +46,7 @@ class CategoryRequest extends FormRequest
 
             case 'POST'://add data
             {
-                return [
+                return [ //
                     'name_en'       => 'min:2|required|max:100|',
                     'name_ar'       => 'min:2|required|max:100|',
                     'description_ar' => 'min:2|required|max:500|',
