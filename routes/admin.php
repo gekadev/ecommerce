@@ -66,4 +66,21 @@ Route::group(['namespace' =>'Dashboard','middleware'=>'auth:admin','prefix'=>'ad
         Route::get('showdetails/{id}', 'CategoryController@showdetails')->name("category.showdetails");
 
     });
+    //routes for admin brands
+    Route::group(['prefix' => 'brand'], function () {
+        Route::get('/','BrandController@index') -> name('brand.index');
+        Route::get('create','BrandController@create') -> name('brand.create');
+        Route::post('store','BrandController@store') -> name('brand.store');
+        Route::get('edit/{id}','BrandController@edit') -> name('brand.edit');
+        Route::get('show/{id}','BrandController@show') -> name('brand.show');
+        Route::put('update/{id}','BrandController@update') -> name('brand.update');
+        Route::put('delete/{id}','BrandController@delete') -> name('brand.delete');
+        Route::put('updateStatus/{id}','BrandController@updateStatus') -> name('brand.updateStatus');
+        Route::post('update_image/{id}',"BrandController@update_images")->name("brand.update_image");
+        Route::put('Datatable', 'BrandController@Datatable')->name("brand.DataTabel");
+        Route::get('pdf', 'BrandController@pdf')->name("brand.pdf");
+        Route::get('CSV', 'BrandController@CSV')->name("brand.CSV");
+        Route::get('showdetails/{id}', 'BrandController@showdetails')->name("brand.showdetails");
+
+    });
 });

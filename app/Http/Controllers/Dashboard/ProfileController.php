@@ -104,7 +104,6 @@ class ProfileController extends Controller
                 return $admin-> phone;
             })->addColumn('image', function (Admin $admin) {
                 return '<img src="/upload/'.$admin->image.'"  data-id="'.$admin->id.'" data-toggle="modal" data-target="#update-img"  alt="" title="Edit Image" class="img-rounded img-responsive center-block img-edit imagenumber'.$admin->id.'" />';
-
             })->addColumn('status', function (Admin $admin) {
 
                 if ($admin->status == 1) {
