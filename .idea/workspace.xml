@@ -6,13 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="afd35521-4eab-44d2-9bb9-292d35cc43a3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/CategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/ProfileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/ProfileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/SettingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/SettingController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/CategoryRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/CategoryRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/BrandController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Dashboard/BrandController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/category/showdetails.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/category/showdetails.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/error.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/error.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/profile/showdetails.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/profile/showdetails.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/admin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -193,19 +190,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\laravelprojects\metronic\app\Exports" />
-      <recent name="F:\laravelprojects\metronic\app\Http\Requests" />
-      <recent name="F:\laravelprojects\metronic\database\migrations" />
-      <recent name="F:\laravelprojects\metronic\app\Http\Controllers\Dashboard" />
-      <recent name="F:\laravelprojects\metronic\resources\views\dashboard" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\laravelprojects\metronic\database\migrations" />
       <recent name="F:\laravelprojects\metronic\database\seeds" />
       <recent name="F:\laravelprojects\metronic\app\Http\Controllers\Dashboard" />
       <recent name="F:\laravelprojects\new\app\Http\Controllers\Dashboard\auth" />
       <recent name="F:\laravelprojects\new\resources\views\site" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\laravelprojects\metronic\app\Exports" />
+      <recent name="F:\laravelprojects\metronic\app\Http\Requests" />
+      <recent name="F:\laravelprojects\metronic\database\factories" />
+      <recent name="F:\laravelprojects\metronic\database\seeds" />
+      <recent name="F:\laravelprojects\metronic\app\Http\Controllers\Dashboard" />
     </key>
   </component>
   <component name="RunManager">
@@ -251,7 +248,8 @@
       <workItem from="1608484209163" duration="10754000" />
       <workItem from="1608571185564" duration="41603000" />
       <workItem from="1609177093517" duration="1765000" />
-      <workItem from="1609180103209" duration="3239000" />
+      <workItem from="1609180103209" duration="5227000" />
+      <workItem from="1609486870640" duration="13590000" />
     </task>
     <servers />
   </component>
@@ -274,14 +272,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="348" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1608119442517" />
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607885333997">
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609658463137">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1607885333997" />
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1606906432104">
+    <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1609658463136" />
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1609656633008">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1606906432104" />
+    <state x="413" y="119" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1609656633008" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1608970586490">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -346,8 +344,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/dashboard/category/showdetails.blade.php</url>
-          <line>180</line>
+          <line>187</line>
           <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php</url>
+          <line>520</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/dashboard/includes/sidebar.blade.php</url>
+          <line>712</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/Dashboard/CategoryController.php</url>

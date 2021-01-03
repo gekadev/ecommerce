@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-@section("title",'تفاصيل  الموظف')
+@section("title",'تفاصيل البراند')
 
 @section('content')
     <!-- BEGIN CONTENT -->
@@ -54,35 +54,23 @@
 
                                     <td><strong> الرقم </strong></td>
 
-                                    <td><strong>{{$admin ->id}}</strong></td>
+                                    <td><strong>{{$brand ->id}}</strong></td>
 
                                 </tr>
 
                                 <tr>
 
-                                    <td><strong>الاسم  </strong></td>
+                                    <td><strong>الاسم باللغه العربيه </strong></td>
 
-                                    <td><strong>{{$admin ->name}}</strong></td>
-
-                                </tr>
-
-
-
-                                <tr>
-
-                                    <td><strong> البريد الاليكتروني</strong></td>
-
-                                    <td><strong>{{$admin ->email}}</strong></td>
+                                    <td><strong>{{$brand ->translate("ar")->name}}</strong></td>
 
                                 </tr>
 
-
-
                                 <tr>
 
-                                    <td><strong> التليفون</strong></td>
+                                    <td><strong> الاسم باللغه الانجليزيه</strong></td>
 
-                                    <td><strong>{{$admin ->phone}}</strong></td>
+                                    <td><strong>{{$brand ->translate("en")->name}}</strong></td>
 
                                 </tr>
 
@@ -91,7 +79,7 @@
 
                                     <td><strong>الحاله</strong></td>
 
-                                    <td><strong>{{$admin ->getActive()}}</strong></td>
+                                    <td><strong>{{$brand ->getActive()}}</strong></td>
 
                                 </tr>
 
@@ -101,7 +89,7 @@
                                     <td><strong> تاريخ الانشاء</strong></td>
 
 {{--                                    <td><strong><?php echo date("Y/m/d h:i:s A",$reservation['created']); ?></strong></td>--}}
-                                    <td><strong>{{date("Y/m/d h:i:s A",$admin ->created)}}</strong></td>
+                                    <td><strong>{{date("Y/m/d h:i:s A",$brand ->created)}}</strong></td>
 
                                 </tr>
 

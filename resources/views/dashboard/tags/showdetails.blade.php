@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-@section("title",'تفاصيل  الموظف')
+@section("title",'تفاصيل التاج')
 
 @section('content')
     <!-- BEGIN CONTENT -->
@@ -50,48 +50,48 @@
 
 
                             <table class="table  table-striped table-bordered " id="sample_1">
+
                                 <tr>
 
                                     <td><strong> الرقم </strong></td>
 
-                                    <td><strong>{{$admin ->id}}</strong></td>
+                                    <td><strong>{{$tag ->id}}</strong></td>
+
+                                </tr>
+                                <tr>
+
+                                    <td><strong>الاسم باللغه العربيه </strong></td>
+
+                                    <td><strong>{{$tag ->translate("ar")->name}}</strong></td>
 
                                 </tr>
 
                                 <tr>
 
-                                    <td><strong>الاسم  </strong></td>
+                                    <td><strong> الاسم باللغه الانجليزيه</strong></td>
 
-                                    <td><strong>{{$admin ->name}}</strong></td>
+                                    <td><strong>{{$tag ->translate("en")->name}}</strong></td>
 
                                 </tr>
+
+
+
+
 
 
 
                                 <tr>
 
-                                    <td><strong> البريد الاليكتروني</strong></td>
+                                    <td><strong>الاسم بالرابط</strong></td>
 
-                                    <td><strong>{{$admin ->email}}</strong></td>
-
-                                </tr>
-
-
-
-                                <tr>
-
-                                    <td><strong> التليفون</strong></td>
-
-                                    <td><strong>{{$admin ->phone}}</strong></td>
+                                    <td><strong>{{$tag ->link_name}}</strong></td>
 
                                 </tr>
-
-
                                 <tr>
 
                                     <td><strong>الحاله</strong></td>
 
-                                    <td><strong>{{$admin ->getActive()}}</strong></td>
+                                    <td><strong>{{$tag ->getActive()}}</strong></td>
 
                                 </tr>
 
@@ -101,7 +101,7 @@
                                     <td><strong> تاريخ الانشاء</strong></td>
 
 {{--                                    <td><strong><?php echo date("Y/m/d h:i:s A",$reservation['created']); ?></strong></td>--}}
-                                    <td><strong>{{date("Y/m/d h:i:s A",$admin ->created)}}</strong></td>
+                                    <td><strong>{{date("Y/m/d h:i:s A",$tag ->created)}}</strong></td>
 
                                 </tr>
 

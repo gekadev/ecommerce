@@ -52,6 +52,13 @@
                             <table class="table  table-striped table-bordered " id="sample_1">
                                 <tr>
 
+                                    <td><strong> الرقم </strong></td>
+
+                                    <td><strong>{{$category ->id}}</strong></td>
+
+                                </tr>
+                                <tr>
+
                                     <td><strong>نوع القسم</strong></td>
 
                                     <td><strong>{{$category ->CategoryType()}}</strong></td>
