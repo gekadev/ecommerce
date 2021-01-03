@@ -83,4 +83,21 @@ Route::group(['namespace' =>'Dashboard','middleware'=>'auth:admin','prefix'=>'ad
         Route::get('showdetails/{id}', 'BrandController@showdetails')->name("brand.showdetails");
 
     });
+    //routes for tags
+    Route::group(['prefix' => 'tags'], function () {
+        Route::get('/','TagsController@index') -> name('tags.index');
+        Route::get('create','TagsController@create') -> name('tags.create');
+        Route::post('store','TagsController@store') -> name('tags.store');
+        Route::get('edit/{id}','TagsController@edit') -> name('tags.edit');
+        Route::get('show/{id}','TagsController@show') -> name('tags.show');
+        Route::put('update/{id}','TagsController@update') -> name('tags.update');
+        Route::put('delete/{id}','TagsController@delete') -> name('tags.delete');
+        Route::put('updateStatus/{id}','TagsController@updateStatus') -> name('tags.updateStatus');
+        Route::post('update_image/{id}',"TagsController@update_images")->name("tags.update_image");
+        Route::put('Datatable', 'TagsController@Datatable')->name("tags.DataTabel");
+        Route::get('pdf', 'TagsController@pdf')->name("tags.pdf");
+        Route::get('CSV', 'TagsController@CSV')->name("tags.CSV");
+        Route::get('showdetails/{id}', 'TagsController@showdetails')->name("tags.showdetails");
+
+    });
 });

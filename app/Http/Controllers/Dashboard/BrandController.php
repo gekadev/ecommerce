@@ -87,7 +87,7 @@ class BrandController extends Controller
 
     public function update(BrandRequest $request,$id)
     {
-//        try{
+        try{
             // prepare data
             $validatedData = array(
                 'status' => $request->status,
@@ -110,10 +110,10 @@ class BrandController extends Controller
             $brandReport = BrandsReports::where(['deleted'=>1,'id'=>$id])->update(['status'=>$validatedData['status']]);
             DB::commit();
             return redirect()->back()->with('success','تم تحديث البيانات بنجاح');
-//        }catch ( \Exception $ex){
-//            return redirect()->back()->with('error','خطاء في تحديث البيانات برجاء المحاوله مره اخري');
-//            DB::rollBack();
-//        }
+        }catch ( \Exception $ex){
+            return redirect()->back()->with('error','خطاء في تحديث البيانات برجاء المحاوله مره اخري');
+            DB::rollBack();
+        }
     }
     public function Datatable()
     {
